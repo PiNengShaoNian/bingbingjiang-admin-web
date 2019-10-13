@@ -1,0 +1,62 @@
+.order-page {
+
+  .order-btns {
+    height: 30px;
+    margin-bottom: 15px;
+  }
+
+  .orders {
+    .order-item {
+      margin-bottom: 20px;
+      display      : flex;
+
+      border-radius: 8px;
+      flex-wrap: wrap;
+      overflow     : hidden;
+      background   : #fff;
+      padding      : 8px 10px;
+
+      .order-dish {
+        width       : 24%;
+        height      : 150px;
+        margin-right: 10px;
+        border      : 1px solid #fff;
+        display     : flex;
+        background  : #e6f7ff;
+
+        &:nth-child(4n) {
+          margin-right: 0;
+        }
+
+        .order-dish-img-wrapper {
+          margin-right: 10px;
+
+          >img {
+            height: 150px;
+            width : 150px;
+          }
+        }
+
+        .dish-overview {
+          >div {
+            height     : 30px;
+            line-height: 30px;
+
+            >span:nth-child(1) {
+              color: #aaa;
+            }
+          }
+        }
+      }
+
+      .order-overview {
+        height: 150px;
+        padding: 5px 10px;
+        >div {
+          height: 30px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
